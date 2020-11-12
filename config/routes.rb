@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   [:omniauth_callback]
 
   namespace :api do
-    namespace :v1 do   
+    namespace :v1 do 
+      resources :prices, only: [:create]
     end
   end
 end
