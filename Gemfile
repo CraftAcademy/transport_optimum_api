@@ -7,6 +7,7 @@ gem "rails", "~> 6.0.3", ">= 6.0.3.4"
 gem "pg", ">= 0.18", "< 2.0"
 gem "puma", "~> 4.1"
 gem "bootsnap", ">= 1.4.2", require: false
+gem "devise_token_auth"
 gem "rack-cors", require: "rack/cors"
 gem "rufo"
 
@@ -15,8 +16,7 @@ group :development, :test do
   gem "pry-rails"
   gem "shoulda-matchers"
   gem "factory_bot_rails"
-  gem "devise_token_auth"
-  gem 'coveralls',  require:  false
+  gem "coveralls", require: false
 end
 
 group :development do
